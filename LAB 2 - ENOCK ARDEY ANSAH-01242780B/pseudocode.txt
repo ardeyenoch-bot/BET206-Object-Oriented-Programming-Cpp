@@ -1,0 +1,238 @@
+ENOCK ANSAH ARDEY - 01242780B
+
+Question 1: Power Factor Status Checker
+- Start  
+- Input power factor  
+- Decision: PF < 0 or PF > 1?  
+  - Yes → Output “Invalid power factor” → End  
+  - No → Next decision: PF ≤ 0.50?  
+    - Yes → Output “Poor” → End  
+    - No → PF ≤ 0.80?  
+      - Yes → Output “Fair” → End  
+      - No → PF ≤ 0.95?  
+        - Yes → Output “Good” → End  
+        - No → Output “Excellent” → End  
+
+
+
+Question 2: Cable Temperature Warning
+- Start  
+- Input temperature  
+- Decision: Temp > 70?  
+  - Yes → Output “Overheating detected” → End  
+  - No → Output “Safe range” → End  
+
+
+
+Question 3: Motor Starting Current Checker
+- Start  
+- Input rated current, starting current  
+- Decision: Starting > 3 × Rated?  
+  - Yes → Output “High starting current” → End  
+  - No → Output “Acceptable” → End  
+
+
+
+Question 4: Fuse Selection Menu
+- Start  
+- Display fuse menu  
+- Input choice  
+- Switch decision:  
+  - Case 1 → Output “5A Fuse for lamps”  
+  - Case 2 → Output “10A Fuse for appliances”  
+  - Case 3 → Output “13A Fuse for sockets”  
+  - Case 4 → Output “20A Fuse for heaters”  
+  - Case 5 → Output “32A Fuse for heavy duty”  
+  - Default → Output “Invalid choice”  
+- End  
+
+
+
+Question 5: Measurement Unit Conversion
+- Start  
+- Display conversion menu  
+- Input choice, value  
+- Switch decision:  
+  - Case 1 → Convert volts → mV  
+  - Case 2 → Convert amps → mA  
+  - Case 3 → Convert kW → W  
+  - Case 4 → Convert ohms → kΩ  
+  - Default → Output “Invalid choice”  
+- End  
+
+
+
+Question 6: Transformer Ratio Calculator
+- Start  
+- Display menu  
+- Input choice  
+- Switch decision:  
+  - Case 1 → Input PT, ST → Compute ratio → Output  
+  - Case 2 → Input PV, PT, ST → Compute SV → Output  
+  - Case 3 → Input SV, PT, ST → Compute PV → Output  
+  - Default → Output “Invalid choice”  
+- End  
+
+
+
+Question 7: Total Power of Lighting Points
+- Start  
+- Set total = 0  
+- Loop 12 times:  
+  - Input wattage  
+  - Add to total  
+- Output total power  
+- End  
+
+
+
+Question 8: Average Current of Three-Phase Readings
+- Start  
+- Loop 6 times:  
+  - Input L1, L2, L3  
+  - Compute average  
+  - Output average  
+- End  
+
+
+
+Question 9: Count Passed Component Tests
+- Start  
+- Set pass = 0, fail = 0  
+- Loop 15 times:  
+  - Input result  
+  - Decision: result = 1?  
+    - Yes → pass++  
+    - No → fail++  
+- Output pass and fail counts  
+- End  
+
+
+
+Question 10: Total Energy for Appliances
+- Start  
+- Set total = 0  
+- Loop 8 times:  
+  - Input power, time  
+  - Compute energy = P × T  
+  - Add to total  
+- Output total energy  
+- End  
+
+
+
+Question 11: Stop Motor Test When Temperature Unsafe
+- Start  
+- Input temperature  
+- While temp ≤ 90 → Output “Safe” → Input next temp  
+- If temp > 90 → Output “Unsafe. Stop test”  
+- End  
+
+
+
+Question 12: Solar Panel Voltage Tracker
+- Start  
+- Input voltage  
+- While voltage ≥ 18 → Output “OK” → Input next voltage  
+- If voltage < 18 → Output “Below operating level”  
+- End  
+
+
+
+Question 13: Earth Resistance Test
+- Start  
+- Input resistance  
+- While resistance ≤ 5 → Output “Acceptable” → Input next resistance  
+- If resistance > 5 → Output “Too high. Improve system”  
+- End  
+
+
+
+Question 14: Laboratory Login Attempt
+- Start  
+- Set attempts = 0  
+- While attempts < 3:  
+  - Input code  
+  - Decision: code = BEE208?  
+    - Yes → Output “Access granted” → End  
+    - No → attempts++  
+- If attempts = 3 → Output “Access denied”  
+- End  
+
+
+
+Question 15: Repeated Ohm’s Law Calculator
+- Start  
+- Do:  
+  - Input V, I  
+  - Compute R = V/I  
+  - Output R  
+  - Ask continue?  
+- While answer = Y  
+- End  
+
+
+
+Question 16: Repeated DC Power Calculator
+- Start  
+- Do:  
+  - Input V, I  
+  - Compute P = V × I  
+  - Output P  
+  - Ask continue?  
+- While answer = Y  
+- End  
+
+
+
+Question 17: Stop Insulation Test Using Break
+- Start  
+- Loop up to 10 times:  
+  - Input resistance  
+  - Decision: R < 1?  
+    - Yes → Output “Failure detected. Stop” → Break  
+    - No → Output “Acceptable”  
+- End  
+
+
+
+Question 18: Stop Load Test When Limit Is Reached
+- Start  
+- Set total = 0  
+- Loop up to 20 times:  
+  - Input power  
+  - Add to total  
+  - Decision: total > 5000?  
+    - Yes → Output “Max load exceeded. Stop” → Break  
+- Output final total  
+- End  
+
+
+
+Question 19: Skip Faulty Sensor Readings
+- Start  
+- Set sum = 0, validCount = 0  
+- Loop 12 times:  
+  - Input reading  
+  - Decision: reading = 999?  
+    - Yes → Output “Faulty skipped” → Continue  
+    - No → Add to sum, validCount++  
+- Compute average = sum ÷ validCount  
+- Output average  
+- End  
+
+
+
+Question 20: Skip Negative Power Readings
+- Start  
+- Set total = 0  
+- Loop 10 times:  
+  - Input reading  
+  - Decision: reading < 0?  
+    - Yes → Output “Invalid skipped” → Continue  
+    - No → Add to total  
+- Output total  
+- End  
+
+
+

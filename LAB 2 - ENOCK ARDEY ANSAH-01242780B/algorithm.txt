@@ -1,0 +1,232 @@
+ENOCK ANSAH ARDEY - 01242780B
+
+
+Question 1: Power Factor Status Checker
+1. Start  
+2. Input power factor (PF)  
+3. If PF < 0 or PF > 1 ? Output “Invalid power factor”  
+4. Else if PF = 0.50 ? Output “Poor power factor”  
+5. Else if PF = 0.80 ? Output “Fair power factor”  
+6. Else if PF = 0.95 ? Output “Good power factor”  
+7. Else ? Output “Excellent power factor”  
+8. Stop  
+
+
+
+Question 2: Cable Temperature Warning
+1. Start  
+2. Input cable temperature (T)  
+3. If T > 70 ? Output “Cable overheating detected”  
+4. Else ? Output “Cable temperature is within safe range”  
+5. Stop  
+
+
+
+Question 3: Motor Starting Current Checker
+1. Start  
+2. Input rated current (R)  
+3. Input starting current (S)  
+4. If S > 3 × R ? Output “High starting current. Use proper motor starter”  
+5. Else ? Output “Starting current is acceptable”  
+6. Stop  
+
+
+
+Question 4: Fuse Selection Menu
+1. Start  
+2. Display fuse menu (5A, 10A, 13A, 20A, 32A)  
+3. Input choice  
+4. Use switch:  
+   - Case 1 ? Output “5A Fuse is suitable for lighting systems and small lamps”  
+   - Case 2 ? Output “10A Fuse is recommended for low power household appliances”  
+   - Case 3 ? Output “13A Fuse is used for general-purpose socket outlets”  
+   - Case 4 ? Output “20A Fuse is appropriate for water heaters”  
+   - Case 5 ? Output “32A Fuse is for heavy duty equipment”  
+   - Default ? Output “Invalid choice”  
+5. Stop  
+
+
+
+Question 5: Measurement Unit Conversion Menu
+1. Start  
+2. Display conversion menu (Volts?mV, Amps?mA, kW?W, Ohms?kO)  
+3. Input choice  
+4. Input value  
+5. Use switch:  
+   - Case 1 ? Multiply value × 1000 ? Output result in mV  
+   - Case 2 ? Multiply value × 1000 ? Output result in mA  
+   - Case 3 ? Multiply value × 1000 ? Output result in W  
+   - Case 4 ? Divide value ÷ 1000 ? Output result in kO  
+   - Default ? Output “Invalid choice”  
+6. Stop  
+
+
+
+Question 6: Transformer Ratio Calculator
+1. Start  
+2. Display menu (Turns ratio, Secondary voltage, Primary voltage)  
+3. Input choice  
+4. Use switch:  
+   - Case 1 ? Input PT, ST ? Compute PT/ST ? Output ratio  
+   - Case 2 ? Input PV, PT, ST ? Compute PV × ST ÷ PT ? Output secondary voltage  
+   - Case 3 ? Input SV, PT, ST ? Compute SV × PT ÷ ST ? Output primary voltage  
+   - Default ? Output “Invalid choice”  
+5. Stop  
+
+---
+
+Question 7: Total Power of Lighting Points
+1. Start  
+2. Set total = 0  
+3. Repeat for 12 lights:  
+   - Input wattage  
+   - Add wattage to total  
+4. Output total power in watts  
+5. Stop  
+
+
+
+Question 8: Average Current of Three-Phase Readings
+1. Start  
+2. Repeat for 6 sets:  
+   - Input L1, L2, L3 currents  
+   - Compute average = (L1 + L2 + L3) ÷ 3  
+   - Output average  
+3. Stop  
+
+
+
+Question 9: Count Passed Component Tests
+1. Start  
+2. Set pass = 0, fail = 0  
+3. Repeat for 15 components:  
+   - Input result (1=pass, 0=fail)  
+   - If result = 1 ? pass++  
+   - Else ? fail++  
+4. Output pass and fail counts  
+5. Stop  
+
+
+
+Question 10: Total Energy for Appliances
+1. Start  
+2. Set total = 0  
+3. Repeat for 8 appliances:  
+   - Input power (W) and time (h)  
+   - Compute energy = power × time  
+   - Add energy to total  
+4. Output total energy in Wh  
+5. Stop  
+
+
+
+Question 11: Stop Motor Test When Temperature Unsafe
+1. Start  
+2. Input motor temperature (T)  
+3. While T = 90 ? Output “Temperature safe” ? Input next T  
+4. If T > 90 ? Output “Motor temperature unsafe. Stop motor test”  
+5. Stop  
+
+
+
+Question 12: Solar Panel Voltage Tracker
+1. Start  
+2. Input voltage (V)  
+3. While V = 18 ? Output “Voltage OK” ? Input next V  
+4. If V < 18 ? Output “Solar panel voltage below operating level”  
+5. Stop  
+
+
+
+Question 13: Earth Resistance Test
+1. Start  
+2. Input resistance (R)  
+3. While R = 5 ? Output “Resistance acceptable” ? Input next R  
+4. If R > 5 ? Output “Earth resistance too high. Improve earthing system”  
+5. Stop  
+
+
+
+Question 14: Laboratory Login Attempt
+1. Start  
+2. Set attempts = 0  
+3. While attempts < 3:  
+   - Input code  
+   - If code = “BEE208” ? Output “Access granted” ? Stop  
+   - Else attempts++  
+4. If attempts = 3 ? Output “Access denied. Maximum attempts reached”  
+5. Stop  
+
+
+
+Question 15: Repeated Ohm’s Law Calculator
+1. Start  
+2. Do:  
+   - Input voltage (V), current (I)  
+   - Compute resistance = V ÷ I  
+   - Output resistance  
+   - Ask user if continue (Y/N)  
+3. While answer = Y  
+4. Stop  
+
+
+
+Question 16: Repeated DC Power Calculator
+1. Start  
+2. Do:  
+   - Input voltage (V), current (I)  
+   - Compute power = V × I  
+   - Output power  
+   - Ask user if continue (Y/N)  
+3. While answer = Y  
+4. Stop  
+
+
+
+Question 17: Stop Insulation Test Using Break
+1. Start  
+2. For up to 10 readings:  
+   - Input resistance (R)  
+   - If R < 1 ? Output “Insulation failure detected. Test stopped” ? Break loop  
+   - Else ? Output “Insulation reading acceptable”  
+3. Stop  
+
+
+
+Question 18: Stop Load Test When Limit Is Reached
+1. Start  
+2. Set total = 0  
+3. For up to 20 appliances:  
+   - Input power (P)  
+   - Add P to total  
+   - If total > 5000 ? Output “Maximum load exceeded. Stop adding appliances” ? Break loop  
+4. Output final total load  
+5. Stop  
+
+
+
+Question 19: Skip Faulty Sensor Readings
+1. Start  
+2. Set sum = 0, validCount = 0  
+3. For 12 readings:  
+   - Input reading (R)  
+   - If R = 999 ? Output “Faulty sensor skipped” ? Continue  
+   - Else ? Add R to sum, validCount++  
+4. Compute average = sum ÷ validCount  
+5. Output average  
+6. Stop  
+
+
+
+Question 20: Skip Negative Power Readings
+1. Start  
+2. Set total = 0  
+3. For 10 readings:  
+   - Input reading (R)  
+   - If R < 0 ? Output “Invalid reading skipped” ? Continue  
+   - Else ? Add R to total  
+4. Output total of valid readings  
+5. Stop  
+
+
+

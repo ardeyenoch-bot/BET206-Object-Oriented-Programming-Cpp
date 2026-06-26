@@ -1,0 +1,17 @@
+ENOCK ANSAH ARDEY - 01242780B
+
+ Application of C++ Programming in Engineering  
+
+Programming plays a crucial role in solving complex engineering problems, and this lab demonstrates how fundamental C++ control statements can be applied in practical engineering contexts.  
+
+The use of conditional statements (if, if...else, switch)in this lab is directly related to engineering decision-making processes. For example, in electrical engineering, conditions are used to determine whether a circuit is operating within safe limits, whether a motor requires a starter, or whether a fuse rating is appropriate for a given load. These logical checks mirror real-world safety and performance evaluations.  
+
+Looping constructs (for, while, do...while) are essential in engineering calculations that require repetitive tasks. Engineers often need to process multiple readings, calculate averages, or accumulate totals — such as summing lighting loads, computing energy consumption, or monitoring sensor data. Loops automate these repetitive operations, ensuring efficiency and accuracy in system analysis.  
+
+The use of break and continue statements reflects practical engineering scenarios where processes must be interrupted or skipped. For instance, insulation tests may be stopped immediately if unsafe resistance is detected, while faulty sensor readings can be ignored to prevent errors in calculations. These control mechanisms are vital in real-time monitoring and automation systems.  
+
+Logical and relational operators are applied in control systems where decisions must be made based on thresholds. For example, checking whether voltage is above or below a safe level, or whether temperature exceeds a limit, directly translates to embedded systems and industrial automation.  
+
+Additionally, repeated calculations using loops and conditional checks are highly relevant in energy management, load analysis, and performance testing. Engineers rely on these computations when designing circuits, optimizing power usage, and ensuring system reliability.  
+
+Overall, this lab highlights how basic control structures in C++ form the foundation for solving real-world engineering problems, especially in areas such as electronics, automation, energy systems, and safety monitoring. By mastering these programming concepts, engineers can design smarter systems, improve efficiency, and ensure operational safety.  
